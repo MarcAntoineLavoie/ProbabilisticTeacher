@@ -86,6 +86,10 @@ def main(args):
 if __name__ == "__main__":
     args = default_argument_parser().parse_args()
 
+    args.num_gpus = 1
+    args.config_file = 'configs/pt/final_c2f_small.yaml'
+    # args.eval_only = True
+
     print("Command Line Args:", args)
     launch(
         main,

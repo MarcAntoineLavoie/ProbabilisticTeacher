@@ -5,7 +5,7 @@
 CUDA_VISIBLE_DEVICES=0 \
 python train_net.py \
      --num-gpus 1 \
-     --config configs/pt/final_c2f.yaml \
+     --config configs/pt/final_c2f_small.yaml \
       MODEL.ANCHOR_GENERATOR.NAME "DifferentiableAnchorGenerator" \
       UNSUPNET.EFL True \
       UNSUPNET.EFL_LAMBDA [0.5,0.5] \
